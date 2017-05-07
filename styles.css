@@ -1,0 +1,76 @@
+@font-face { font-family: NexaBold; font-weight: bold; src: url("fonts/Nexa Bold.otf")}
+@font-face { font-family: NexaThin; font-weight: thin; src: url("fonts/Nexa Light.otf")}
+
+h1 {
+    font-family: NexaBold;
+    font-size: 125px;
+    text-align: center
+}
+
+div.bgblk {
+    background-color: black;
+    color: white;
+}
+
+#hr {
+    height: 5px;
+    background-color: black
+}
+
+#dpn {
+    width: 689px;
+    height: auto;
+    margin: 0;
+}
+
+#dpnd {
+    color: red;
+    float:left;
+    margin: 0%
+}
+
+#dpnp {
+    color: limegreen;
+    float:left;
+    margin: 0 0
+}
+
+
+#dpnn {
+    color: blue;
+    float:left;
+    margin: 0 0
+}
+
+#dpng {
+    float: left;
+    margin: 0 1%
+}
+
+#dpna {
+    float: left;
+    margin: 0 -1%;
+}
+
+#dpnm {
+    float: left;
+    margin: 0 1%;
+}
+
+#dpne {
+    float: left;
+    margin: 0 -1.5%;
+}
+
+#dpns {
+    float: left;
+    margin: 0 1.5%;
+}
+
+#linkcurrent {
+    font-size: 60px;
+}
+
+#link- {
+    font-size: 60px;
+}
