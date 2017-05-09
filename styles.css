@@ -1,6 +1,26 @@
 @font-face { font-family: NexaBold; font-weight: bold; src: url("fonts/Nexa Bold.otf")}
 @font-face { font-family: NexaThin; font-weight: thin; src: url("fonts/Nexa Light.otf")}
 
+@keyframes blurin {
+    0% {filter: blur(0px); opacity: 1;}
+    100% {filter: blur(5px); opacity: 0.5}
+}
+
+@keyframes blurout {
+    0% {filter: blur(5px); opacity: 0.5}
+    100% {filter: blur(0px); opacity: 1}
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes fadeout {
+    0% {opacity: 1}
+    100% {opacity: 0}
+}
+
 h1 {
     font-family: NexaBold;
     font-size: 125px;
@@ -10,11 +30,68 @@ h1 {
 div.bgblk {
     background-color: black;
     color: white;
+    text-align: center;
+    
 }
 
 #hr {
     height: 5px;
     background-color: black
+}
+
+.supercs188:hover img {
+    filter: blur(5px);
+    /*-webkit-filter: blur(5px);*/
+    animation-name: blurin;
+    animation-duration: 500ms;
+    opacity: 0.5;
+}
+
+.supercs188:hover div {
+    animation-name: fadein;
+    animation-duration: 500ms;
+    opacity: 1;
+}
+
+
+.supercs188 {
+    animation-name: blurout;
+    animation-duration: 500ms;
+    z-index: 1;
+}
+
+.supercs188 div {
+    opacity: 0;
+    animation-name: fadeout;
+    animation-duration: 500ms
+}
+
+#hrtop {
+    height: 5px;
+    background-color: black;
+    margin-top: 50px
+}
+
+#supercs188 {
+    margin: auto;
+    width: 854px;
+    position: relative;
+    cursor: pointer;
+}
+
+#supercs188 div{
+    position: absolute;
+    top: 180px;
+    background-color: black;
+    height: 120px;
+    width: 852px;
+    left: 2px;
+    z-index: 10;
+}
+
+
+#supercs188 img {
+    height: 480px;
 }
 
 #dpn {
@@ -34,7 +111,6 @@ div.bgblk {
     float:left;
     margin: 0 0
 }
-
 
 #dpnn {
     color: blue;
@@ -67,10 +143,17 @@ div.bgblk {
     margin: 0 1.5%;
 }
 
-#linkcurrent {
-    font-size: 60px;
+#links {
+    text-align: center; 
+    font-size: 60px; 
+    font-family: NexaThin
 }
 
-#link- {
-    font-size: 60px;
+#links a {
+    text-decoration: none;
+    color: black;
+}
+
+#currlink {
+    font-family: NexaBold
 }
