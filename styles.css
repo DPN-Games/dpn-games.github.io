@@ -60,7 +60,39 @@ div.bgblk {
     z-index: 1;
 }
 
+.supercs1:hover img {
+    filter: blur(5px);
+    /*-webkit-filter: blur(5px);*/
+    animation-name: blurin;
+    animation-duration: 500ms;
+    opacity: 0.5;
+}
+
+.supercs1:hover div {
+    animation-name: fadein;
+    animation-duration: 500ms;
+    opacity: 1;
+}
+
+
+.supercs1 {
+    animation-name: blurout;
+    animation-duration: 500ms;
+    z-index: 1;
+}
+
+#bg1 {
+    background-size: contain;
+    position: absolute;
+}
+
 .supercs188 div {
+    opacity: 0;
+    animation-name: fadeout;
+    animation-duration: 500ms
+}
+
+.supercs1 div {
     opacity: 0;
     animation-name: fadeout;
     animation-duration: 500ms
@@ -79,6 +111,12 @@ div.bgblk {
     cursor: pointer;
 }
 
+#supercs1 {
+    margin: auto;
+    width: 854px;
+    position: relative;
+}
+
 #supercs188 div{
     position: absolute;
     top: 180px;
@@ -87,10 +125,25 @@ div.bgblk {
     width: 852px;
     left: 2px;
     z-index: 10;
+    box-shadow: 1px 4px 8px 0 black, 1px 6px 20px 0 black;
 }
 
+#supercs1 div{
+    position: absolute;
+    top: 200px;
+    background-color: black;
+    height: 50px;
+    width: 852px;
+    left: 2px;
+    z-index: 10;
+    box-shadow: 1px 4px 8px 0 black, 1px 6px 20px 0 black;
+}
 
 #supercs188 img {
+    height: 480px;
+}
+
+#supercs1 img {
     height: 480px;
 }
 
