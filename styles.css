@@ -1,5 +1,6 @@
 @font-face { font-family: NexaBold; font-weight: bold; src: url("fonts/Nexa Bold.otf")}
 @font-face { font-family: NexaThin; font-weight: thin; src: url("fonts/Nexa Light.otf")}
+@font-face { font-family: Discord; font-weight: normal; src: url("fonts/Discord.otf")}
 
 @keyframes blurin {
     0% {filter: blur(0px); opacity: 1;}
@@ -27,6 +28,11 @@ h1 {
     text-align: center
 }
 
+#discordlink {
+    width: 700px;
+    margin: auto;
+}
+
 div.bgblk {
     background-color: black;
     color: white;
@@ -37,6 +43,15 @@ div.bgblk {
 #hr {
     height: 5px;
     background-color: black
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+}
+
+#discord {
+    display: inline-block;
 }
 
 .supercs188:hover img {
